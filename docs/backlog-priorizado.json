@@ -1,0 +1,247 @@
+{
+  "backlog": [
+    {
+      "id": 1,
+      "nome": "Onboarding Guiado",
+      "tipo": "core",
+      "problema": "Novos usuários ficam confusos sobre como usar o sistema",
+      "impacto": "Aumentar conversão de sign-up para primeiro uso em 40%",
+      "esforço": "média",
+      "sprint": "Fase 1",
+      "dependencias": []
+    },
+    {
+      "id": 2,
+      "nome": "Dashboard Robusto com Cards/Resumos",
+      "tipo": "core",
+      "problema": "Usuários não veem o valor que estão recebendo (vagas, candidaturas)",
+      "impacto": "Aumentar retenção em 35%, melhorar engagement",
+      "esforço": "média",
+      "sprint": "Fase 1",
+      "dependencias": ["Onboarding Guiado"]
+    },
+    {
+      "id": 3,
+      "nome": "Histórico de Vagas com Filtros",
+      "tipo": "core",
+      "problema": "Usuários não conseguem encontrar vagas anteriores ou filtrar por critério",
+      "impacto": "Aumentar engagement e re-engagement em 25%",
+      "esforço": "média",
+      "sprint": "Fase 1",
+      "dependencias": ["Dashboard Robusto"]
+    },
+    {
+      "id": 4,
+      "nome": "Sistema de Feedback de Vaga",
+      "tipo": "core",
+      "problema": "Sem feedback dos usuários, qualidade de curadoria não melhora",
+      "impacto": "Melhorar relevância de vagas em 30%, criar prova social",
+      "esforço": "baixa",
+      "sprint": "Fase 1",
+      "dependencias": ["Histórico de Vagas"]
+    },
+    {
+      "id": 5,
+      "nome": "Gráficos e Analytics do Usuário",
+      "tipo": "ux",
+      "problema": "Usuários não veem progresso ou dados sobre suas interações",
+      "impacto": "Aumentar engajamento e satisfação do usuário",
+      "esforço": "média",
+      "sprint": "Fase 1",
+      "dependencias": ["Dashboard Robusto"]
+    },
+    {
+      "id": 6,
+      "nome": "Sistema de Reputação e Prova Social",
+      "tipo": "retenção",
+      "problema": "Falta confiabilidade e prova social de sucesso",
+      "impacto": "Aumentar conversão de visitantes em 50%, construir comunidade",
+      "esforço": "média",
+      "sprint": "Fase 2",
+      "dependencias": ["Sistema de Feedback"]
+    },
+    {
+      "id": 7,
+      "nome": "Filtros Avançados + Match Inteligente",
+      "tipo": "core",
+      "problema": "Usuários recebem vagas irrelevantes, causando frustração",
+      "impacto": "Aumentar taxa de aceitação em 45%, reduzir churn",
+      "esforço": "alta",
+      "sprint": "Fase 2",
+      "dependencias": ["Sistema de Feedback"]
+    },
+    {
+      "id": 8,
+      "nome": "Alertas Push/WhatsApp para Match Alto",
+      "tipo": "core",
+      "problema": "Vagas muito relevantes podem ser perdidas no fluxo",
+      "impacto": "Aumentar taxa de cliques em 60%, melhorar conversão",
+      "esforço": "média",
+      "sprint": "Fase 2",
+      "dependencias": ["Match Inteligente"]
+    },
+    {
+      "id": 9,
+      "nome": "Suporte Multicanal (Email, Telegram)",
+      "tipo": "core",
+      "problema": "Usuários que falham no WhatsApp perdem oportunidades",
+      "impacto": "Aumentar cobertura de usuários em 30%, reduzir churn",
+      "esforço": "alta",
+      "sprint": "Fase 3",
+      "dependencias": []
+    },
+    {
+      "id": 10,
+      "nome": "Sistema de Planos (Freemium/Premium)",
+      "tipo": "monetização",
+      "problema": "Sem modelo de receita, negócio não é sustentável",
+      "impacto": "Gerar receita recorrente, escala financeira",
+      "esforço": "alta",
+      "sprint": "Fase 3",
+      "dependencias": ["Dashboard Robusto"]
+    },
+    {
+      "id": 11,
+      "nome": "Comandos Interativos via WhatsApp",
+      "tipo": "ux",
+      "problema": "Usuários precisam voltar ao app para mudar preferências",
+      "impacto": "Aumentar retenção em 20%, melhorar UX",
+      "esforço": "média",
+      "sprint": "Fase 3",
+      "dependencias": []
+    },
+    {
+      "id": 12,
+      "nome": "Internacionalização (i18n) e Multi-idioma",
+      "tipo": "core",
+      "problema": "Limitado apenas a PT-BR, perde mercado global",
+      "impacto": "Abrir mercado global, aumentar TAM em 500%",
+      "esforço": "alta",
+      "sprint": "Fase 4",
+      "dependencias": []
+    },
+    {
+      "id": 13,
+      "nome": "Dashboard Admin + Analytics Internas",
+      "tipo": "infra",
+      "problema": "Sem visibilidade em métricas, decisões baseadas em achismo",
+      "impacto": "Melhorar tomada de decisão, identificar oportunidades",
+      "esforço": "média",
+      "sprint": "Fase 4",
+      "dependencias": []
+    },
+    {
+      "id": 14,
+      "nome": "Escalabilidade Técnica e Modularidade",
+      "tipo": "infra",
+      "problema": "Arquitetura monolítica dificulta expansão futura",
+      "impacto": "Facilitar manutenção, expansão de features",
+      "esforço": "alta",
+      "sprint": "Fase 4",
+      "dependencias": []
+    }
+  ],
+  "onboardingFlow": [
+    {
+      "passo": 1,
+      "titulo": "Criar Conta",
+      "descricao": "Email + senha segura",
+      "acao": "Sign-up com confirmação de email",
+      "tempo": "2 min"
+    },
+    {
+      "passo": 2,
+      "titulo": "Completar Perfil",
+      "descricao": "Nome, localização, profissão",
+      "acao": "Preencher dados básicos",
+      "tempo": "3 min"
+    },
+    {
+      "passo": 3,
+      "titulo": "Definir Preferências",
+      "descricao": "Área de trabalho, nível, tipo de contrato",
+      "acao": "Selecionar filtros de busca",
+      "tempo": "5 min"
+    },
+    {
+      "passo": 4,
+      "titulo": "Primeira Busca",
+      "descricao": "Enviar primeira busca de vagas",
+      "acao": "Enviar busca pelo modal",
+      "tempo": "2 min"
+    },
+    {
+      "passo": 5,
+      "titulo": "Conectar WhatsApp",
+      "descricao": "Confirmar número de WhatsApp para receber vagas",
+      "acao": "Adicionar número e confirmar",
+      "tempo": "1 min"
+    }
+  ],
+  "recurringFlow": [
+    {
+      "etapa": 1,
+      "titulo": "Receber Vaga",
+      "descricao": "Usuário recebe notificação de nova vaga no WhatsApp",
+      "acao": "Clicar em link ou usar comando"
+    },
+    {
+      "etapa": 2,
+      "titulo": "Visualizar Detalhes",
+      "descricao": "Ver empresa, cargo, salário, requisitos",
+      "acao": "Ler informações completas"
+    },
+    {
+      "etapa": 3,
+      "titulo": "Interagir",
+      "descricao": "Candidatar, favoritar, ignorar ou marcar como visto",
+      "acao": "Clicar em botão de ação"
+    },
+    {
+      "etapa": 4,
+      "titulo": "Enviar Feedback",
+      "descricao": "Classificar qualidade da vaga (válida, spam, expirada)",
+      "acao": "Rating de 1-5 ou feedback textual"
+    },
+    {
+      "etapa": 5,
+      "titulo": "Histórico",
+      "descricao": "Ver todas as vagas recebidas e interações",
+      "acao": "Acessar dashboard e filtrar"
+    }
+  ],
+  "dashboardRedesign": {
+    "secoes": [
+      {
+        "nome": "Header Profissional",
+        "componentes": ["Avatar com online indicator", "Dropdown menu", "Logo", "Botão de logout"]
+      },
+      {
+        "nome": "Stats Cards",
+        "componentes": [
+          "Vagas Ativas (contagem)",
+          "Vagas Recebidas (mês)",
+          "Taxa de Cliques (%)",
+          "Favoritos (contagem)"
+        ]
+      },
+      {
+        "nome": "Ações Rápidas",
+        "componentes": [
+          "Botão: Procurar Vagas (abre modal)",
+          "Botão: Editar Perfil",
+          "Botão: Ver Histórico",
+          "Botão: Configurações"
+        ]
+      },
+      {
+        "nome": "Gráficos",
+        "componentes": ["Vagas por mês (linha)", "Vagas por área (pizza)", "Taxa de respostas (barra)"]
+      },
+      {
+        "nome": "Histórico Recente",
+        "componentes": ["Tabela com últimas 5 vagas", "Filtro rápido", "Link para histórico completo"]
+      }
+    ]
+  }
+}

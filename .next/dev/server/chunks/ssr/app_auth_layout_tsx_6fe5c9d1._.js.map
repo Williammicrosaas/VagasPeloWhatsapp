@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///D:/backup/SAAS%20VAGAS%20PELO%20WHATSAPP/app/auth/layout.tsx"],"sourcesContent":["import type React from \"react\"\r\nexport default function AuthLayout({\r\n  children,\r\n}: {\r\n  children: React.ReactNode\r\n}) {\r\n  return <div className=\"min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950\">{children}</div>\r\n}\r\n"],"names":[],"mappings":";;;;;;AACe,SAAS,WAAW,EACjC,QAAQ,EAGT;IACC,qBAAO,8OAAC;QAAI,WAAU;kBAA4E;;;;;;AACpG"}}]
+}

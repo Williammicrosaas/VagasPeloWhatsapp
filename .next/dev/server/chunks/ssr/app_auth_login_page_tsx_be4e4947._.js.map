@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///D:/backup/SAAS%20VAGAS%20PELO%20WHATSAPP/app/auth/login/page.tsx"],"sourcesContent":["\"use client\"\n\nimport { redirect } from \"next/navigation\"\n\nexport default function LoginRedirect() {\n  redirect(\"/auth/signin\")\n}\n"],"names":[],"mappings":";;;;AAEA;AAFA;;AAIe,SAAS;IACtB,IAAA,8IAAQ,EAAC;AACX"}}]
+}
